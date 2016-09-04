@@ -9,7 +9,9 @@ public class ActivityVentas extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity_ventas);
+
         //se agrega el boton de retorno al activity padre
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

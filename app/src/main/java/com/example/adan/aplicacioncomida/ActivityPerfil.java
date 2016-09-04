@@ -9,7 +9,6 @@ public class ActivityPerfil extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity_perfil);
-        //se agrega el boton de retorno al activity padre
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

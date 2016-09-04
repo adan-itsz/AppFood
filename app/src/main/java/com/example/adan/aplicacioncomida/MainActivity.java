@@ -18,7 +18,6 @@ import android.view.MenuItem;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,8 +42,6 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
-      
 
     }
 
@@ -98,6 +95,7 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.compras) {
 
+
             Intent intent = new Intent(getApplicationContext(),ActivityCompras.class);
             startActivity(intent);
 
@@ -108,6 +106,11 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.chat) {
             Intent intent = new Intent(getApplicationContext(),ActivityChat.class);
             startActivity(intent);
+
+        } else if (id == R.id.platillos) {
+
+        } else if (id == R.id.chat) {
+
 
         }
 

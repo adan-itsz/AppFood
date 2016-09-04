@@ -31,7 +31,6 @@
         <activity android:name=".ActivityPlatillos"
             android:parentActivityName=".MainActivity"/>
 
-
     </application>
 
 </manifest>
