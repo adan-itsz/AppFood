@@ -13,17 +13,14 @@
     tools:showIn="@layout/app_bar_main">
 
 
-    <android.support.v4.view.ViewPager
-
-        android:id="@+id/view_pager"
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"
-        ></android.support.v4.view.ViewPager>
-
-
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Publicar platillo"
+        android:id="@+id/button"
+        android:onClick="onClick"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="false" />
 
 </RelativeLayout>

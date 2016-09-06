@@ -14,9 +14,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-
+import android.widget.Button;
+import android.util.Log;
 public class MainActivity extends AppCompatActivity
+
         implements NavigationView.OnNavigationItemSelectedListener {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +27,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        Button boton = (Button)findViewById(R.id.button);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,7 +46,23 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+
+
+
     }
+
+    public void onClick(View view){
+    Log.d("a","si entro------------------------");
+
+        switch(view.getId()){
+
+            case R.id.button:
+
+                Intent i =new Intent(getApplicationContext(),formulario_platillo.class);
+                startActivity(i);
+        }
+    }
+
 
     @Override
     public void onBackPressed() {
@@ -106,11 +125,6 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.chat) {
             Intent intent = new Intent(getApplicationContext(),ActivityChat.class);
             startActivity(intent);
-
-        } else if (id == R.id.platillos) {
-
-        } else if (id == R.id.chat) {
-
 
         }
 

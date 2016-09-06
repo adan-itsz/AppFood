@@ -24,13 +24,16 @@
         <activity
             android:name=".ActivityVentas"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".ActivityCompras"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".ActivityChat"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".ActivityPlatillos"
-            android:parentActivityName=".MainActivity"/>
-
+        <activity
+            android:name=".ActivityCompras"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ActivityChat"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ActivityPlatillos"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".formulario_platillo"></activity>
     </application>
 
 </manifest>
