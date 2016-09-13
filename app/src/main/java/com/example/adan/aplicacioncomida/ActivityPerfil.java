@@ -34,7 +34,9 @@ public class ActivityPerfil extends AppCompatActivity {
 
             return output;
         }
+
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
