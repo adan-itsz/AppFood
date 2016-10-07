@@ -60,59 +60,17 @@
         android:layout_alignParentEnd="true"
         android:orientation="horizontal"
         android:layout_gravity="center_horizontal">
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_weight="1"
-            android:id="@+id/estrella1"
-            android:layout_below="@+id/textView10"
-            android:layout_alignRight="@+id/textView9"
-            android:layout_alignEnd="@+id/textView9"
-            android:src="@drawable/ic_star_black_24dp"/>
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_weight="1"
-            android:id="@+id/estrella2"
-            android:layout_below="@+id/textView10"
-            android:layout_alignRight="@+id/textView9"
-            android:layout_alignEnd="@+id/textView9"
-            android:src="@drawable/ic_star_black_24dp"/>
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_weight="1"
-            android:id="@+id/estrella3"
-            android:layout_below="@+id/textView10"
-            android:layout_alignRight="@+id/textView9"
-            android:layout_alignEnd="@+id/textView9"
-            android:src="@drawable/ic_star_half_black_24dp"/>
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_weight="1"
-            android:id="@+id/estrella5"
-            android:layout_below="@+id/textView10"
-            android:layout_alignRight="@+id/textView9"
-            android:layout_alignEnd="@+id/textView9"
-            android:src="@drawable/ic_star_border_black_24dp"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_weight="1"
-            android:id="@+id/estrella4"
-            android:layout_below="@+id/textView10"
-            android:layout_alignRight="@+id/textView9"
-            android:layout_alignEnd="@+id/textView9"
-            android:src="@drawable/ic_star_border_black_24dp"/>
     </LinearLayout>
+
+        <RatingBar
+            android:layout_width="244dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar"
+            android:numStars="3"
+            android:rating="1"
+            android:stepSize="1"
+            android:layout_gravity="center_horizontal"/>
 
         <TextView
             android:layout_width="wrap_content"
