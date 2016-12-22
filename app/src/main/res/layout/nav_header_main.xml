@@ -2,6 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="@dimen/nav_header_height"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.adan.aplicacioncomida.MainActivity"
 
 
     android:background="@color/colorPrimary"
@@ -22,6 +24,7 @@
         android:src="@android:drawable/sym_def_app_icon" />
 
     <TextView
+        android:id="@+id/txtNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"

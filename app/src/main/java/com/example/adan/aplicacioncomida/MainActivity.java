@@ -1,6 +1,8 @@
 package com.example.adan.aplicacioncomida;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
@@ -17,12 +19,18 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.util.Log;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 public class MainActivity extends AppCompatActivity
 
@@ -75,6 +83,28 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+//se agrega imagen al nav view
+        ImageView img = (ImageView) findViewById(R.id.imageView);
+        TextView txtnombre = (TextView)findViewById(R.id.txtNombre);
+        URL imageUrl = null;
+        HttpURLConnection conn = null;
+
+        try {
+
+            imageUrl = new URL(mPhotoUrl);
+            conn = (HttpURLConnection) imageUrl.openConnection();
+            conn.connect();
+            Bitmap imagen = BitmapFactory.decodeStream(conn.getInputStream());
+            img.setImageBitmap(imagen);
+
+        } catch (IOException e) {
+
+            e.printStackTrace();
+
+        }
+
+        txtnombre.setText(mUsername);
 
 
 
