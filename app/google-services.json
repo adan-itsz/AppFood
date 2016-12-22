@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "947771685595",
+    "firebase_url": "https://appfood-30821.firebaseio.com",
+    "project_id": "appfood-30821",
+    "storage_bucket": "appfood-30821.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:947771685595:android:b31597c7afca1161",
+        "android_client_info": {
+          "package_name": "com.example.adan.aplicacioncomida"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "947771685595-ima8p1trqmj64dackbph7p7d1g6hkb81.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxhV_OXFjde2iRa4hVsm_ZDeeATqCfRXM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

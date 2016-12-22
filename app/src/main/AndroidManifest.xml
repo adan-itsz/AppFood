@@ -18,6 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".login" />
         <activity
             android:name=".ActivityPerfil"
             android:parentActivityName=".MainActivity" />
@@ -33,7 +36,8 @@
         <activity
             android:name=".ActivityPlatillos"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".formulario_platillo"></activity>
+        <activity android:name=".formulario_platillo" />
+
     </application>
 
 </manifest>
